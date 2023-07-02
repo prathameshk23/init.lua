@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
     end,
   })
 
+  use "MunifTanjim/nui.nvim"
   use "rebelot/kanagawa.nvim"
   use { "bluz71/vim-moonfly-colors", as = "moonfly" }
   use { "catppuccin/nvim", as = "catppuccin" }
@@ -81,6 +82,8 @@ return require('packer').startup(function(use)
   use "folke/zen-mode.nvim"
   use "NvChad/nvim-colorizer.lua"
   use "lewis6991/gitsigns.nvim"
+  use "echasnovski/mini.nvim"
+  use "echasnovski/mini.animate"
   use "preservim/tagbar"
   use "tpope/vim-commentary"
   use "mfussenegger/nvim-dap"

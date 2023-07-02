@@ -25,7 +25,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 --for lazy git
-vim.keymap.set("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>, {noremap = true, silent = true}")
 
 -- for git worktrees
 vim.keymap.set("n", "<leader>gw", "<cmd>lua _TOGGLE_GITWORKTREE()<CR>")
@@ -55,6 +54,10 @@ vim.keymap.set("n", "<leader>pv", "<cmd>NvimTreeFindFileToggle<CR>")
 
 -- Runing python code
 vim.keymap.set("n", "<leader>rx", ":vsp | term python %<CR>")
+
+--Running Java Code
+vim.keymap.set("n", "<leader>jc", ":vsp | term javac %<CR>")
+vim.keymap.set("n", "<leader>jr", ":vsp | term java %<CR>")
 
 -- Tagbar
 vim.keymap.set("n", "<F8>", ":TagbarToggle<CR>")

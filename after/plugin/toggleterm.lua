@@ -24,7 +24,13 @@ require("toggleterm").setup{
 
 local Terminal = require('toggleterm.terminal').Terminal
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+local python = Terminal:new({ cmd = "python %", hidden = true })
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 
 function _LAZYGIT_TOGGLE()
   lazygit:toggle()
+end
+
+function _PYTHON_RUN()
+  python:toggle()
 end
