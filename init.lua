@@ -1,4 +1,4 @@
-require("thevimconf.packer")
-require("thevimconf.set")
-require("thevimconf.remap")
-
+require("core.remaps")
+require("core.options")
+require("core.lazy")
+require("core.colorscheme")

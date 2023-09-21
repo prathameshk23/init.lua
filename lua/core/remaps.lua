@@ -35,7 +35,7 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 -- vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+-- vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
@@ -50,7 +50,7 @@ vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
 
-vim.keymap.set("n", "<leader>pv", "<cmd>NvimTreeFindFileToggle<CR>")
+-- vim.keymap.set("n", "<leader>pv", "<cmd>NvimTreeFindFileToggle<CR>")
 
 -- Runing python code
 vim.keymap.set("n", "<leader>rx", ":vsp | term python %<CR>")
@@ -70,7 +70,12 @@ vim.keymap.set("n", "<Leader>fp", ":Prettier<CR>")
 vim.api.nvim_set_keymap("n", "<leader>r", ":vsp | term cargo run<CR>", {})
 vim.api.nvim_set_keymap("n", "<leader>b", ":vsp | term cargo build<CR>", {})
 vim.api.nvim_set_keymap("n", "<leader>t", ":vsp | term cargo test<CR>", {})
+--
+-- Flutter
+vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope flutter commands<CR>", {})
+
 --Trouble
 vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
   { silent = true, noremap = true }
 )
+
