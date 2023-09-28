@@ -10,7 +10,7 @@ return {
 		event = { "BufReadPre", "BufNewFile" },
 		opts = {
 			user_default_options = {
-				mode = "virtualtext",
+				tailwind = true,
 			},
 		},
 	},
