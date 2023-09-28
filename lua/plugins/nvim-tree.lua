@@ -4,8 +4,16 @@ return {
 	config = function()
 		local nvimtree = require("nvim-tree")
 
+		vim.g.loaded_netrw = 1
+		vim.g.loaded_netrwPlugin = 1
+
+		vim.opt.termguicolors = true
+
 		nvimtree.setup({
-			disable_netrw = false,
+			sort_by = "case_sensitive",
+			filters = {
+				dotfiles = false,
+			},
 			diagnostics = {
 				enable = true,
 				icons = {

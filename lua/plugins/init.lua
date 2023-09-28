@@ -18,14 +18,4 @@ return {
 		"RRethy/vim-illuminate",
 		event = { "BufReadPre", "BufNewFile" },
 	},
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		event = { "BufReadPost", "BufNewFile" },
-		config = true,
-	},
-	{
-		"pocco81/auto-save.nvim",
-		event = "InsertEnter",
-		config = true,
-	},
 }
