@@ -51,6 +51,8 @@ return {
 				"stylua", -- lua formatter
 				"eslint_d", -- ts/js linter
 				"rustywind",
+				"xmlformat",
+				"google_java_format",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true,

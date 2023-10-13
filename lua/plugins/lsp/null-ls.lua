@@ -26,6 +26,8 @@ return {
 					extra_filetypes = { "svelte", "jsx", "tsx" },
 				}), -- js/ts formatter
 				formatting.stylua, -- lua formatter
+				formatting.xmlformat,
+				formatting.google_java_format,
 				formatting.rustywind,
 				diagnostics.eslint_d.with({ -- js/ts linter
 					condition = function(utils)
