@@ -1,0 +1,360 @@
+commands = {}
+dependencies = {
+   ["lua-curl"] = {
+      ["scm-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               },
+               {
+                  op = "<",
+                  version = {
+                     5, 5, string = "5.5"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   mimetypes = {
+      ["1.0.0-3"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   ["nvim-nio"] = {
+      ["1.10.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   ["rest.nvim"] = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               },
+               {
+                  op = "<",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {},
+            name = "nvim-nio"
+         },
+         {
+            constraints = {},
+            name = "lua-curl"
+         },
+         {
+            constraints = {},
+            name = "mimetypes"
+         },
+         {
+            constraints = {},
+            name = "xml2lua"
+         }
+      }
+   },
+   xml2lua = {
+      ["1.6-2"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               },
+               {
+                  op = "<=",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   }
+}
+modules = {
+   XmlParser = {
+      "xml2lua/1.6-2"
+   },
+   cURL = {
+      "lua-curl/scm-0"
+   },
+   ["cURL.impl.cURL"] = {
+      "lua-curl/scm-0"
+   },
+   ["cURL.safe"] = {
+      "lua-curl/scm-0"
+   },
+   ["cURL.utils"] = {
+      "lua-curl/scm-0"
+   },
+   lcurl = {
+      "lua-curl/scm-0"
+   },
+   ["lualine.components.rest"] = {
+      "rest.nvim/scm-1"
+   },
+   mimetypes = {
+      "mimetypes/1.0.0-3"
+   },
+   ["nio.control"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.curl"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.file"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.init"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.logger"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.lsp"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.lsp-types"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.process"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.streams"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.tasks"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.tests"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.ui"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.util"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["nio.uv"] = {
+      "nvim-nio/1.10.0-1"
+   },
+   ["rest-nvim.api"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.autocmds"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.client.curl"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.commands"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.config.check"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.config.init"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.functions"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.health"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.init"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.keybinds"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.logger"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.parser.dynamic_vars"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.parser.env_vars"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.parser.init"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.parser.script_vars"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.result.help"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.result.init"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.result.winbar"] = {
+      "rest.nvim/scm-1"
+   },
+   ["rest-nvim.utils"] = {
+      "rest.nvim/scm-1"
+   },
+   ["telescope._extensions.rest"] = {
+      "rest.nvim/scm-1"
+   },
+   xml2lua = {
+      "xml2lua/1.6-2"
+   },
+   ["xmlhandler.dom"] = {
+      "xml2lua/1.6-2"
+   },
+   ["xmlhandler.print"] = {
+      "xml2lua/1.6-2"
+   },
+   ["xmlhandler.tree"] = {
+      "xml2lua/1.6-2"
+   }
+}
+repository = {
+   ["lua-curl"] = {
+      ["scm-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               cURL = "cURL.lua",
+               ["cURL.impl.cURL"] = "cURL/impl/cURL.lua",
+               ["cURL.safe"] = "cURL/safe.lua",
+               ["cURL.utils"] = "cURL/utils.lua",
+               lcurl = "lcurl.so"
+            }
+         }
+      }
+   },
+   mimetypes = {
+      ["1.0.0-3"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               mimetypes = "mimetypes.lua"
+            }
+         }
+      }
+   },
+   ["nvim-nio"] = {
+      ["1.10.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["nio.control"] = "nio/control.lua",
+               ["nio.curl"] = "nio/curl.lua",
+               ["nio.file"] = "nio/file.lua",
+               ["nio.init"] = "nio/init.lua",
+               ["nio.logger"] = "nio/logger.lua",
+               ["nio.lsp"] = "nio/lsp.lua",
+               ["nio.lsp-types"] = "nio/lsp-types.lua",
+               ["nio.process"] = "nio/process.lua",
+               ["nio.streams"] = "nio/streams.lua",
+               ["nio.tasks"] = "nio/tasks.lua",
+               ["nio.tests"] = "nio/tests.lua",
+               ["nio.ui"] = "nio/ui.lua",
+               ["nio.util"] = "nio/util.lua",
+               ["nio.uv"] = "nio/uv.lua"
+            }
+         }
+      }
+   },
+   ["rest.nvim"] = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               ["lua-curl"] = "scm-0",
+               mimetypes = "1.0.0-3",
+               ["nvim-nio"] = "1.10.0-1",
+               xml2lua = "1.6-2"
+            },
+            modules = {
+               ["lualine.components.rest"] = "lualine/components/rest.lua",
+               ["rest-nvim.api"] = "rest-nvim/api.lua",
+               ["rest-nvim.autocmds"] = "rest-nvim/autocmds.lua",
+               ["rest-nvim.client.curl"] = "rest-nvim/client/curl.lua",
+               ["rest-nvim.commands"] = "rest-nvim/commands.lua",
+               ["rest-nvim.config.check"] = "rest-nvim/config/check.lua",
+               ["rest-nvim.config.init"] = "rest-nvim/config/init.lua",
+               ["rest-nvim.functions"] = "rest-nvim/functions.lua",
+               ["rest-nvim.health"] = "rest-nvim/health.lua",
+               ["rest-nvim.init"] = "rest-nvim/init.lua",
+               ["rest-nvim.keybinds"] = "rest-nvim/keybinds.lua",
+               ["rest-nvim.logger"] = "rest-nvim/logger.lua",
+               ["rest-nvim.parser.dynamic_vars"] = "rest-nvim/parser/dynamic_vars.lua",
+               ["rest-nvim.parser.env_vars"] = "rest-nvim/parser/env_vars.lua",
+               ["rest-nvim.parser.init"] = "rest-nvim/parser/init.lua",
+               ["rest-nvim.parser.script_vars"] = "rest-nvim/parser/script_vars.lua",
+               ["rest-nvim.result.help"] = "rest-nvim/result/help.lua",
+               ["rest-nvim.result.init"] = "rest-nvim/result/init.lua",
+               ["rest-nvim.result.winbar"] = "rest-nvim/result/winbar.lua",
+               ["rest-nvim.utils"] = "rest-nvim/utils.lua",
+               ["telescope._extensions.rest"] = "telescope/_extensions/rest.lua"
+            }
+         }
+      }
+   },
+   xml2lua = {
+      ["1.6-2"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               XmlParser = "XmlParser.lua",
+               xml2lua = "xml2lua.lua",
+               ["xmlhandler.dom"] = "xmlhandler/dom.lua",
+               ["xmlhandler.print"] = "xmlhandler/print.lua",
+               ["xmlhandler.tree"] = "xmlhandler/tree.lua"
+            }
+         }
+      }
+   }
+}

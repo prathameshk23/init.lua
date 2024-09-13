@@ -1,0 +1,1 @@
+{"metrics":{"completion_time":1714325818362,"start_time":1714325806068},"name":"typescript-language-server","schema_version":"1.1","links":{"bin":{"typescript-language-server":"node_modules\/.bin\/typescript-language-server"},"share":{},"opt":{}},"secondary_sources":[],"primary_source":{"id":"pkg:npm\/typescript-language-server@4.3.3","type":"registry+v1"}}
