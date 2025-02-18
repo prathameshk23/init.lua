@@ -17,7 +17,7 @@ return {
 			masonlsp.setup({
 				ensure_installed = {
 					"lua_ls",
-					"tsserver",
+					"ts_ls",
 				},
 			})
 		end,
@@ -43,7 +43,7 @@ return {
 			end
 
 			-- ts server
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
 				init_options = {
@@ -58,6 +58,8 @@ return {
 				filetypes = {
 					"javascript",
 					"typescript",
+					"typescriptreact",
+					"javascriptreact",
 					"vue",
 				},
 			})
@@ -85,9 +87,22 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.emmet_ls.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
 			lspconfig.html.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
+				filetypes = {
+					"html",
+					"javascript",
+					"typescript",
+					"typescriptreact",
+					"javascriptreact",
+					"vue",
+				},
 			})
 
 			lspconfig.pyright.setup({
@@ -116,17 +131,27 @@ return {
 			lspconfig.volar.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
-				cmd = { "vue-language-server", "--stdio" },
-				filetypes = { "vue" },
+				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 				init_options = {
-					typescript = {
-						tsdk = "/usr/lib/node_modules/typescript/lib",
+					vue = {
+						hybridMode = false,
 					},
 				},
 			})
 
 			-- tailwindcss server
 			lspconfig.tailwindcss.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
+			lspconfig.prismals.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
+			-- astro server
+			lspconfig.astro.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
 			})

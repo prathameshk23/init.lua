@@ -12,7 +12,7 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.rustywind,
 				null_ls.builtins.formatting.prettierd.with({
-					extra_filetypes = { "svelte", "jsx", "tsx", "vue" },
+					extra_filetypes = { "svelte", "jsx", "tsx", "vue", "astro" },
 				}),
 			},
 			on_attach = function(current_client, bufnr)
