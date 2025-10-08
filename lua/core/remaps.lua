@@ -49,7 +49,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end)
 
-vim.keymap.set("n", "<leader>pv", "<cmd>:Neotree action=show toggle=true<CR>")
+-- vim.keymap.set("n", "<leader>pv", "<cmd>:Neotree action=show toggle=true<CR>")
 
 -- Runing python code
 vim.keymap.set("n", "<leader>rx", ":vsp | term python %<CR>")
@@ -75,5 +75,10 @@ vim.api.nvim_set_keymap("n", "<leader>rl", ":Rest run last<CR>", {})
 -- Flutter
 vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope flutter commands<CR>", {})
 
---Trouble
 vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", { silent = true, noremap = true })
+
+vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>")
+vim.keymap.set("n", "<leader>lt", ":Leet tabs<CR>", {})
+vim.keymap.set("n", "<leader>rt", ":Leet test<CR>", {})
+vim.keymap.set("n", "<leader>lp", ":Leet list<CR>", {})
+vim.keymap.set("n", "<leader>ls", ":Leet submit<CR>", {})

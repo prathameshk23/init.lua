@@ -131,7 +131,7 @@ return {
 			lspconfig.volar.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
-				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+				filetypes = { "vue" },
 				init_options = {
 					vue = {
 						hybridMode = false,
@@ -156,8 +156,14 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.clangd.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
 			-- lua lsp
 			lspconfig.lua_ls.setup({
+				augroup = augroup,
 				on_attach = on_attach,
 				capabilities = capabilities,
 				settings = { -- custom settings for lua
