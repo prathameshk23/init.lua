@@ -78,7 +78,6 @@ vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope flutter commands<CR>", {}
 vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", { silent = true, noremap = true })
 
 vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>")
-vim.keymap.set("n", "<leader>lt", ":Leet tabs<CR>", {})
-vim.keymap.set("n", "<leader>rt", ":Leet test<CR>", {})
-vim.keymap.set("n", "<leader>lp", ":Leet list<CR>", {})
-vim.keymap.set("n", "<leader>ls", ":Leet submit<CR>", {})
+vim.api.nvim_set_keymap("n", "<leader>pv", ":Oil<CR>", {})
+
+vim.api.nvim_set_keymap("n", "<leader>cp", ":!g++ % -o %:r && ./%:r<CR>", { noremap = true, silent = true })
